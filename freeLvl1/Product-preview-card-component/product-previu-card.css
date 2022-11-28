@@ -1,0 +1,95 @@
+.attribution { font-size: 11px; text-align: center; };
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: rgb(241, 241, 241);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container-main{
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container-middle {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.container-center{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: center;
+    width: 40%;
+}
+
+.container-center-left{
+    display: flex;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+}
+.container-center-left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.container-center-right {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.container-center-right-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+    align-self: center;
+
+}
+.container-center-right-price h2{
+    color: green;
+    display: flex;
+    justify-content: flex-start;
+}
+.container-center-right-price h2{
+    color: green;
+}
+.btn-cart {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height: 50px;
+    width: 80%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-center-right-title {
+    text-align: start;
+    width: 70%;
+    margin-left: 10px;
+}
+
+.container-center-right p2{
+    line-height: 25px;
+    font-size: 13px;
+    margin-left: 10px;
+    width: 75%;
+
+}
+
+.container-center-right p { 
+    height: 10px;
+}
