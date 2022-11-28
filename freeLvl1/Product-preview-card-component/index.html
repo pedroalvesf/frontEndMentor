@@ -12,6 +12,19 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="product-previu-card.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Product preview card component</title>
 
@@ -23,9 +36,12 @@
       <div class="container-middle">
         <div class="container-center">
           <div class="container-center-left">
-            <img
+            <img class="img-desktop"
               src="/Product-preview-card-component/images/image-product-desktop.jpg"
             />
+            <img class="img-mobile"
+            src="/Product-preview-card-component/images/image-product-mobile.jpg"
+          />
           </div>
           <div class="container-center-right">
             <p>perfume</p>
@@ -36,9 +52,20 @@
               interpretation composed by Olivier Polge, Perfumer-Creator for the
               House of CHANEL.
             </p2>
-            <div class="container-center-right-price"><h2>$149.99 </h2> $169.99;
+            <div class="container-center-right-price">
+              <div class="container-center-right-price-green">
+              <h2>$149.99 </h2>
             </div>
-            <button class="btn-cart">Add to Cart </button>
+            <div class="container-center-right-price-black">
+              <p>$169.99</p>
+          </div>
+            </div>
+            <div class="container-btn">
+            <button class="btn-cart">
+              <img src="images/icon-cart.svg">
+              Add to Cart
+            </button>
+          </div>
           </div>
         </div>
       </div>
@@ -47,7 +74,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Pedro Alves</a>.
     </div>
   </body>
 </html>

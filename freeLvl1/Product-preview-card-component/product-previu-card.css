@@ -1,6 +1,8 @@
 .attribution { font-size: 11px; text-align: center; };
 .attribution a { color: hsl(228, 45%, 44%); }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 body{
     background-color: rgb(241, 241, 241);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -17,6 +19,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 600px;
+    width: 1000px;
 }
 
 .container-center{
@@ -24,35 +27,37 @@ body{
     flex-direction: row;
     border-radius: 10px;
     justify-content: center;
-    width: 40%;
-}
+    width: 50%;
 
+}
+.img-mobile{
+    display: none;
+}
 .container-center-left{
     display: flex;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
     width: 50%;
     height: 50%;
 }
-.container-center-left img{
+.img-desktop {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
 }
 .container-center-right {
-    background-color: aliceblue;
+    background-color: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
     width: 50%;
-    border-radius: 10px;
+    height: 50%;
+    border-radius: 0px 10px 10px 0px;
 }
 
 .container-center-right-price {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 15px;
-    font-size: 15px;
-    align-self: center;
+    justify-content: center;
+    font-family: "Fraunces", serif;
 
 }
 .container-center-right-price h2{
@@ -60,26 +65,36 @@ body{
     display: flex;
     justify-content: flex-start;
 }
-.container-center-right-price h2{
-    color: green;
+.container-center-right-price-black {
+    text-decoration: line-through;
+    font-size: 10px;
+}
+
+.container-btn {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
 }
 .btn-cart {
     background-color: green;
     color: white;
     border: none;
     border-radius: 4px;
-    height: 50px;
-    width: 80%;
     display: flex;
-    align-self: center;
-    justify-content: center;
+    gap: 10px;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 60%;
 }
 
 .container-center-right-title {
     text-align: start;
     width: 70%;
     margin-left: 10px;
+    font-family: "Fraunces", serif;
 }
 
 .container-center-right p2{
@@ -90,6 +105,73 @@ body{
 
 }
 
-.container-center-right p { 
-    height: 10px;
+.container-center-right p {
+    height: 0px;
+    margin-left: 10px;
+}
+
+@media (max-width: 545px) and (min-width:375px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-main {
+        margin: 0;
+        width: 100vw;
+    }
+    .container-middle{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .container-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-center-right {
+        width: 70vw;
+        display: flex;
+        height: 100%;
+        border-radius:  0px 0px 10px 10px;
+    }
+
+    .container-center-right p2{
+        line-height: 20px;
+        margin-left: 10px;
+        font-size: 16px;
+        color: gray;
+    }
+    .container-center-right-price {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+    .container-center-right-price-black {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
+    .container-center-right-price-green  {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .container-center-left{
+        width: 70vw;
+        height: 30vh;
+
+    }
+    .img-desktop {
+        display: none;
+    }
+    .img-mobile {
+        display:block;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+
 }
