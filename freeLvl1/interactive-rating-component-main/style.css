@@ -64,7 +64,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
 }
-.container-main-options{
+.container-main-op{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -119,7 +119,7 @@ body {
     border: none;
     color: white;
     border-radius: 20px;
-        transition: 0.5s;
+    transition: 0.5s;
 }
 
 .btn-submit:hover{
@@ -129,6 +129,14 @@ body {
     cursor: pointer;
 }
 
+.disabled {
+    background-color: gray;
+    opacity: 0.1;
+}
+.disabled:hover {
+    background-color: gray;
+    color: white;
+}
 /* STARTING THE SECOND PAGE  */
 .selected-display {
     display: none;
@@ -154,7 +162,7 @@ body {
     color: hsl(25, 97%, 53%);
     background-color: hsl(220, 10%, 24%);;
     border-radius: 10px;
-    width: 50%;
+    width: 70%;
     height: 80%;
     display: flex;
     justify-content: center;
@@ -178,4 +186,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.attribution {
+    color: white;
+    font-size: 15px;
+    padding-top: 5px;
 }
